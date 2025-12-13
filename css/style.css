@@ -1,0 +1,265 @@
+/* ============================
+   BASIC PAGE STYLES
+   ============================ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f2f5f7;
+  color: #222;
+}
+
+/* Center content and limit width */
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* ============================
+   HEADER + MAIN MENU
+   ============================ */
+
+.site-header {
+  background-color: #0077b6;
+  color: white;
+  padding: 12px 0;
+}
+
+.site-header .brand {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.site-tagline {
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+/* Main navigation (menu) */
+.main-nav ul {
+  list-style: none;
+  margin: 8px 0 0 0;
+  padding: 0;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* .nav-link is a reusable class for menu items */
+.nav-link {
+  background-color: transparent;
+}
+
+/* .nav-link--active is a variation (same element, extra class) */
+.nav-link--active,
+.main-nav a:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* ============================
+   HERO SECTION (LARGE BANNER)
+   ============================ */
+
+.hero {
+  background-color: #e3f2fd;
+  border-bottom: 1px solid #cfd8dc;
+  padding: 32px 0;
+}
+
+.hero-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.hero-text {
+  flex: 1 1 260px;
+}
+
+.hero-title {
+  font-size: 28px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.hero-subtitle {
+  margin-top: 0;
+  color: #455a64;
+}
+
+.hero-image-box {
+  flex: 1 1 260px;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 12px;
+  display: block;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Button-style link */
+.btn {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 4px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background-color: #0096c7;
+  color: white;
+  border-color: #0096c7;
+}
+
+.btn-primary:hover {
+  background-color: #0077b6;
+}
+
+/* ============================
+   SECTIONS + TITLES
+   ============================ */
+
+.section {
+  padding: 24px 0;
+}
+
+.section-title {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.section-intro {
+  margin-top: 0;
+  color: #546e7a;
+  font-size: 14px;
+}
+
+/* ============================
+   PLACE CARDS
+   ============================ */
+
+.place-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.place-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+  overflow: hidden;
+  flex: 1 1 260px;
+}
+
+.place-card img {
+  width: 100%;
+  display: block;
+}
+
+.place-card-body {
+  padding: 10px 12px 12px;
+}
+
+.place-name {
+  margin: 0 0 4px;
+  font-size: 16px;
+}
+
+.place-location {
+  margin: 0;
+  font-size: 13px;
+  color: #78909c;
+}
+
+.place-description {
+  margin: 6px 0 0;
+  font-size: 14px;
+}
+
+/* ============================
+   SIMPLE GALLERY
+   ============================ */
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.gallery-item {
+  flex: 1 1 180px;
+}
+
+.gallery-item img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+/* ============================
+   ABOUT / TEXT BLOCK
+   ============================ */
+
+.about-box {
+  background-color: white;
+  border-radius: 8px;
+  padding: 16px 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-size: 14px;
+}
+
+.about-box ul {
+  padding-left: 18px;
+}
+
+/* ============================
+   FOOTER
+   ============================ */
+
+.site-footer {
+  background-color: #004b6b;
+  color: #cfd8dc;
+  font-size: 12px;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 24px;
+}
+
+/* ============================
+   RESPONSIVE
+   ============================ */
+
+@media (max-width: 600px) {
+  .brand {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}
